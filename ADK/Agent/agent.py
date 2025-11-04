@@ -68,9 +68,7 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     description="Especialista no ERP SAP e na area tributária",
     instruction="""Você é um especialista no sistima SAP assim como tambem dominá o sistema tributário brasileiro
-                fazendo pesquisas assim como consultas que sejam solicitadas. Em alguns casos será necessario
-                utilizar sua ferramenta de busca que é a tool:
-                - google_search""",
+                fazendo pesquisas assim como consultas que sejam solicitadas.""",
                 
     tools=[consulta_cnpj, alteraCusto]
 )

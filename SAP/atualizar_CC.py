@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 
-df = pd.read_excel("C:\\Users\\fernando.araujo_logg\\Downloads\\AlteraCentroCusto.xlsx", sheet_name="Alterações")
+df = pd.read_excel("/home/fernandoaraujo_logg/Desenvolvimentos/SAP/AlteraCentroCusto.xlsx")
 
 filiais = ["L", "T", "X"]
 
@@ -26,9 +26,9 @@ for index, row in df.iterrows():
     numero = str(row[0])  # Ajuste conforme a coluna que contém o valor desejado
 
     # Pegando os outros parâmetros (supondo que estão nas colunas 1, 2 e 3)
-    param2 = row[2]  # Coluna 1: Param2
-    param3 = row[3]  # Coluna 2: Param3
-    param4 = row[4]  # Coluna 3: Param4
+    param2 = row[1]  # Coluna 1: Param2
+    param3 = row[2]  # Coluna 2: Param3
+    param4 = row[3]  # Coluna 3: Param4
 
     # Gerar os valores combinados (exemplo: L50150, T50150, X50150)
     for filial in filiais:
