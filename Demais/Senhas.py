@@ -9,7 +9,7 @@ alfanumerica = ['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g',
 nova_senha = ''
 
 while True:
-    for c in range(0, 15):
+    for c in range(0, 16):
         char = choice(alfanumerica)
         nova_senha += char
     
